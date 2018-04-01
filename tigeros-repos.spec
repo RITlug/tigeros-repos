@@ -4,7 +4,7 @@ Version:        27
 Release:        1
 License:        MIT
 Group:          System Environment/Base
-URL:            https://github.com/RITlug/TigerOS
+URL:            https://github.com/RITlug/tigeros-repos
 Source:         %{name}-%{version}.tar.gz
 Provides:       tigeros-repos(%{version})
 Requires:       system-release(%{version})
