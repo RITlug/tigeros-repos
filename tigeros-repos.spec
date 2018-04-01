@@ -22,7 +22,7 @@ TigerOS package repository files for yum and dnf along with gpg public keys
 %install
 # Install the keys
 install -d -m 755 $RPM_BUILD_ROOT/etc/pki/rpm-gpg
-install -m 644 RPM-GPG-KEY* $RPM_BUILD_ROOT/etc/pki/rpm-gpg/
+install -m 644 RPM-GPG-KEY-TigerOS-%{version}-primary $RPM_BUILD_ROOT/etc/pki/rpm-gpg/
 
 # and add symlink for compat generic location
 ln -s RPM-GPG-KEY-TigerOS-%{version}-primary RPM-GPG-KEY-%{version}-TigerOS
