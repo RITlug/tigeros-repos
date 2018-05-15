@@ -1,9 +1,8 @@
 Name:           tigeros-repos
-Version:        28.1
-Release:        1%{?dist}
+Version:        1.0
+Release:        2%{?dist}
 Summary:        TigerOS package repository
 
-Group:          System Environment/Base
 License:        MIT
 URL:            https://github.com/RITlug/tigeros-repos
 Source:         %{name}-%{version}-%{release}.tar.gz
@@ -13,7 +12,7 @@ BuildArch:      noarch
 
 %description
 TigerOS package repository files for yum
-and dnf along with gpg public keys
+and dnf along with gpg public keys.
 
 %prep
 %setup -q
@@ -35,7 +34,7 @@ install -m 644 tigeros.repo %{buildroot}/etc/yum.repos.d/
 /etc/pki/rpm-gpg/RPM-GPG-KEY-TigerOS-%{vers}
 
 %changelog
-* Tue May 15 2018 Christian Martin <tigeros@ritlug.com> - 28.1
+* Tue May 15 2018 Christian Martin <tigeros@ritlug.com> - 1.0-2
 - Updated to F28
 
 * Wed Apr 04 2018 Tim Zabel <tjz8659@rit.edu> - 1.0-1
