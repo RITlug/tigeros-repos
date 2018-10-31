@@ -1,6 +1,6 @@
 Name:           tigeros-repos
 Version:        1.0
-Release:        2%{?dist}
+Release:        3%{?dist}
 Summary:        TigerOS package repository
 
 License:        MIT
@@ -8,7 +8,7 @@ URL:            https://github.com/RITlug/tigeros-repos
 Source:         %{name}-%{version}-%{release}.tar.gz
 BuildArch:      noarch
 
-%global vers 28
+%global vers 29
 
 %description
 TigerOS package repository files for yum
@@ -34,6 +34,10 @@ install -m 644 tigeros.repo %{buildroot}/etc/yum.repos.d/
 /etc/pki/rpm-gpg/RPM-GPG-KEY-TigerOS-%{vers}-primary
 
 %changelog
+* Wed Oct 30 2018 Tim Zabel <tjz8659@rit.edu> - 1.0-3
+- Fedora 29 build
+- update GPG key to F29
+
 * Tue May 15 2018 Christian Martin <tigeros@ritlug.com> - 1.0-2
 - Updated to F28
 - fix GPG key name
